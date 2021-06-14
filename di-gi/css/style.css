@@ -1,0 +1,31 @@
+body {
+    --main-color: #2B4074;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background-color: var(--main-color);
+    filter: drop-shadow(0px 0px 2px rgba(155, 155, 155, 0.498556));
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 65px;
+    left: 61px;
+    top: 17px;
+    background: url("../images/logo.png");
+
+}
+.menu-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 3px;
+    top: 30px;
+}
