@@ -112,6 +112,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     color: #FFFFFF;
+    font-size: 10px;
 }
 .left-arrow-carousel {
     display: block;
@@ -144,4 +145,10 @@ body {
     line-height: 70px;
     font-size: 26px;
     width: 100%;
+}
+.promo {
+    width: 1440px;
+    height: 192px;
+    background: var(--main-color);
+
 }
