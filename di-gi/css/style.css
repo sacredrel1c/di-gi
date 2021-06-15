@@ -3,18 +3,20 @@ body {
 }
 .container {
     width: 100%;
-    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
 }
 .header {
-    position: relative;
-    width: 1440px;
+
+    background-color: var(--main-color);
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     width: 100px;
     height: 65px;
     left: 61px;
@@ -22,12 +24,91 @@ body {
     background: url("../images/logo.png");
 
 }
+
 .menu-button {
-    position: absolute;
+    position: relative;
     width: 40px;
     height: 40px;
     background-color: white;
     border-radius: 3px;
-    left: 1250px;
+    right: 150px;
     top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+.menu-bar {
+    background: transparent;
+    color: #767676;
+}
+
+.menu-bar:active {
+    color: var(--main-color);
+}
+.intro {
+    width: 1440px;
+    height: 668px;
+    top:100px;
+
+    background: url("../images/bg-img.jpg") no-repeat center;
+}
+.intro-shadow {
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 33, 33, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.into-title {
+    width: 513px;
+    margin-top: 107px;
+    font-family: Roboto Condensed, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.intro-text{
+    width: 886px;
+    margin-top: -40px;
+    font-family: Roboto Condensed, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+    /* or 108% */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.intro-readmore {
+    margin-bottom: 60px;
+    width: 200px;
+    height: 50px;
+    background: var(--main-color);
+    border-radius: 3px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+}
+.intro-pagination {
+    margin-bottom: 80px;
+}
+.intro-pagination > i {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #FFFFFF;
 }
