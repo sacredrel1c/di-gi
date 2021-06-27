@@ -48,12 +48,13 @@
 
 .intro {
     height: 668px;
+    position: relative;
     background: url("../images/bg-img.jpg") no-repeat center;
     background-size: cover;
 }
 
 .intro-shadow {
-    position: relative;
+
     width: 100%;
     height: 100%;
     background: rgba(33, 33, 33, 0.5);
@@ -816,11 +817,15 @@ div.grid-item::before {
 
 @media screen and (max-device-width: 1024px) {
     .container {
-        width: 944px;
+        min-width: 944px;
     }
     .services {
         flex-direction: column;
         padding: 4px;
+        align-items: flex-start;
+    }
+    .services-descr {
+        width: 65%;
     }
     .projects {
         grid-template-columns: 1fr 1fr;
