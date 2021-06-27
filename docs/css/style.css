@@ -216,7 +216,6 @@
     align-items: center;
 
 }
-
 .services-descr {
     display: flex;
     flex-direction: column;
@@ -749,7 +748,7 @@ div.grid-item::before {
 
 .footer-social div {
     height: 59px;
-    width: 285px;
+    width: 25%;
     border: 1px solid #7EBF84;
     display: flex;
     justify-content: center;
@@ -775,7 +774,6 @@ div.grid-item::before {
     justify-content: space-between;
 }
 .footer-links p {
-    width: 285px;
     text-transform: uppercase;
     font-family: Roboto Condensed,sans-serif;
     font-style: normal;
@@ -815,3 +813,12 @@ div.grid-item::before {
     text-decoration: none;
 }
 
+@media screen and (max-device-width: 1024px) {
+    .services {
+        flex-direction: column;
+    }
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 23px;
+    }
+}
