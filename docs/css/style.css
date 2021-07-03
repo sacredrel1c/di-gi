@@ -566,7 +566,6 @@ span.product {
 
 .grid-item > img {
     border-radius: 4px;
-    width: 100%;
 }
 
 .grid-item > div {
@@ -841,7 +840,7 @@ div.grid-item::before {
     text-decoration: none;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .container {
         min-width: 944px;
         padding: 0 1%;
@@ -903,16 +902,136 @@ div.grid-item::before {
         margin: 0;
         height: 1200px;
     }
+
     .grid-item:nth-of-type(3n+1) {
         order: 1;
     }
+
     .grid-item:nth-of-type(3n+2) {
         order: 2;
     }
+
     .grid-item:nth-of-type(3n) {
         order: 3;
     }
+
     .grid-item {
         width: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        min-width: 680px;
+        padding: 0 1%;
+    }
+
+    .into-title {
+        font-size: 60px;
+    }
+
+    .promo-text {
+        padding: 0 6px;
+    }
+
+    .promo-text p:nth-child(1) {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .promo-text p:nth-child(2) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .promo-callback {
+        margin-right: 42px;
+    }
+
+    .services {
+        flex-direction: column;
+        padding: 4px;
+        align-items: flex-start;
+    }
+
+    .services-descr {
+        width: 100%;
+    }
+
+    .services-descr p:nth-child(1) {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .icons-row {
+        flex-wrap: wrap;
+    }
+
+    .icon {
+        width: 331px;
+        height: 288px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 23px;
+    }
+
+    .video-text {
+        position: relative;
+    }
+
+    .video-text > p:nth-child(1) {
+        font-size: 36px;
+        line-height: 36px;
+
+    }
+    .video-text > p:nth-child(3) {
+        width: 85%;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .video-text > hr {
+        border: 5px solid #2B4074;
+        width: 88px;
+    }
+
+    .video > img {
+        width: 35%;
+    }
+
+    .video-text > a.button {
+        position: absolute;
+        bottom: -100px;
+        right: 67%;
+    }
+    .latest-news > p {
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .masonry-grid {
+        display: flex;
+        margin: 0;
+        height: 1745px;
+    }
+    .grid-item:nth-of-type(2n+1) {
+        order: 1;
+    }
+    .grid-item:nth-of-type(2n) {
+        order: 2;
+    }
+    .grid-item {
+        width: 40%;
+    }
+    .nav-top {
+        padding: 0 5px;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        margin-bottom: 56px;
+    }
+    .footer-links > div {
+        width: 50%;
+        margin: 0 0 28px 0;
     }
 }
