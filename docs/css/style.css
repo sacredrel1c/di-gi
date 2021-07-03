@@ -245,6 +245,7 @@
 
 .services-descr hr {
     margin-top: 31px;
+    background-color: #2B4074;
     border: 5px solid #2B4074;
     width: 98px;
 }
@@ -411,6 +412,7 @@ span.product {
 
 .recent-title > hr {
     margin-top: 24px;
+    background-color: white;
     border: 5px solid white;
     width: 100px;
 }
@@ -520,6 +522,7 @@ span.product {
 
 .video-text > hr {
     border: 5px solid #2B4074;
+    background-color: #2B4074;
     width: 114px;
 }
 
@@ -542,6 +545,7 @@ span.product {
 
 .latest-news > hr {
     border: 5px solid #2B4074;
+    background-color: #2B4074;
     width: 100px;
     margin: 2% auto 115px;
 }
