@@ -54,7 +54,6 @@
 }
 
 .intro-shadow {
-
     width: 100%;
     height: 100%;
     background: rgba(33, 33, 33, 0.5);
@@ -218,6 +217,7 @@
     align-items: center;
 
 }
+
 .services-descr {
     display: flex;
     flex-direction: column;
@@ -551,7 +551,7 @@ span.product {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    height: 900px;
+    height: 820px;
     counter-reset: items;
 }
 
@@ -598,13 +598,16 @@ span.product {
     outline-offset: -10px;
 
 }
-.grid-item:hover div{
+
+.grid-item:hover div {
     background: #2B4074;
     bottom: 30px;
 }
-.grid-item:hover p{
+
+.grid-item:hover p {
     color: #F9F6E5;
 }
+
 .grid-item-more {
     visibility: hidden;
     transition: opacity 1s ease-out;
@@ -617,12 +620,14 @@ span.product {
     justify-content: center;
     align-items: center;
 }
+
 .grid-item-more > a {
     background: url("../images/info_button2.png");
     width: 29px;
     height: 28px;
     margin: 6px;
 }
+
 .grid-item:hover .grid-item-more {
     visibility: visible;
     opacity: 1;
@@ -655,6 +660,7 @@ div.grid-item::before {
     content: "";
     padding: 0;
 }
+
 .testimonial {
     margin: 5%;
     height: 480px;
@@ -664,6 +670,7 @@ div.grid-item::before {
     justify-content: space-between;
     align-items: center;
 }
+
 .testimonial-quote > i {
     margin: 30px;
     display: block;
@@ -671,8 +678,9 @@ div.grid-item::before {
     line-height: 14px;
     color: #2B4074;
 }
+
 .testimonial-blockquote {
-    font-family: Roboto Condensed,sans-serif;
+    font-family: Roboto Condensed, sans-serif;
     font-style: normal;
     font-weight: lighter;
     font-size: 36px;
@@ -680,12 +688,14 @@ div.grid-item::before {
     text-align: center;
     color: #4A4A4A;
 }
+
 .testimonial-blockquote > blockquote > strong {
     color: #2B4074;
     font-weight: 700;
 }
+
 .testimonial-cite {
-    font-family: Roboto Condensed,sans-serif;
+    font-family: Roboto Condensed, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -694,12 +704,14 @@ div.grid-item::before {
     letter-spacing: 2px;
     color: #4A4A4A;
 }
+
 .testimonial-pagination > i {
     margin-left: 10px;
     margin-right: 10px;
     color: #2B4074;
     font-size: 10px;
 }
+
 .footer-bg {
     width: 100%;
     position: relative;
@@ -707,15 +719,17 @@ div.grid-item::before {
     height: 639px;
 
 }
+
 .footer {
     width: 100%;
     height: 100%;
-    padding:0 81px;
+    padding: 0 81px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
 }
+
 .footer-logo {
     position: absolute;
     top: -30px;
@@ -725,13 +739,15 @@ div.grid-item::before {
     border-radius: 3px;
     left: calc(50% - 115px);
 }
+
 .footer-logo > a > img {
     display: block;
     margin: 0 auto;
 }
+
 .footer > p {
     padding-top: 150px;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -739,6 +755,7 @@ div.grid-item::before {
     letter-spacing: 2px;
     color: #FFFFFF;
 }
+
 .footer-social {
     display: flex;
     justify-content: space-between;
@@ -753,14 +770,17 @@ div.grid-item::before {
     justify-content: center;
     align-items: center;
 }
+
 .footer-social > div:first-child {
     border-left: none;
 }
+
 .footer-social > div:last-child {
     border-right: none;
 }
-.footer-social  i {
-    font-family: FontAwesome,sans-serif;
+
+.footer-social i {
+    font-family: FontAwesome, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -768,16 +788,19 @@ div.grid-item::before {
     color: #FFFFFF;
 
 }
+
 .footer-links {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-links div {
     width: 25%;
 }
+
 .footer-links p {
     text-transform: uppercase;
-    font-family: Roboto Condensed,sans-serif;
+    font-family: Roboto Condensed, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -786,16 +809,18 @@ div.grid-item::before {
     color: #F9F6E5;
     margin-bottom: 22px;
 }
+
 .footer-links div * {
     display: block;
     text-decoration: none;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 20px;
     color: #FFFFFF;
 }
+
 .nav-top {
     padding: 0 81px;
     height: 42px;
@@ -804,8 +829,9 @@ div.grid-item::before {
     justify-content: flex-end;
     align-items: center;
 }
+
 .nav-top a {
-    font-family: Roboto Condensed,sans-serif;
+    font-family: Roboto Condensed, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -815,40 +841,78 @@ div.grid-item::before {
     text-decoration: none;
 }
 
-@media screen and (max-device-width: 1024px) {
+@media (max-width: 1024px) {
     .container {
         min-width: 944px;
+        padding: 0 1%;
     }
+
+    .into-title {
+        font-size: 84px;
+    }
+
+    .intro-text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .promo-text {
+        padding: 0 6px;
+    }
+
+    .promo-text p:nth-child(1) {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .promo-text p:nth-child(2) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
     .services {
         flex-direction: column;
         padding: 4px;
         align-items: flex-start;
     }
+
     .services-descr {
-        width: 65%;
+        width: 100%;
     }
+
+    .services-descr p:nth-child(1) {
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .projects {
         grid-template-columns: 1fr 1fr;
         grid-gap: 23px;
     }
+
     .video {
         padding: 80px 6px;
     }
+
     .video > img {
         width: 40%;
     }
+
     .masonry-grid {
-        height: 900px;
+        display: flex;
+        margin: 0;
+        height: 1200px;
     }
     .grid-item:nth-of-type(3n+1) {
         order: 1;
     }
-
     .grid-item:nth-of-type(3n+2) {
         order: 2;
     }
-
     .grid-item:nth-of-type(3n) {
         order: 3;
+    }
+    .grid-item {
+        width: 30%;
     }
 }
